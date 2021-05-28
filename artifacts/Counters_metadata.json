@@ -1,0 +1,48 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Matt Condon (@shrugs)",
+			"details": "Provides counters that can only be incremented or decremented by one. This can be used e.g. to track the number of elements in a mapping, issuing ERC721 ids, or counting request ids. Include with `using Counters for Counters.Counter;` Since it is not possible to overflow a 256 bit integer with increments of one, `increment` can skip the {SafeMath} overflow check, thereby saving gas. This does assume however correct usage, in that the underlying `_value` is never directly accessed.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Counters",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LottoFlat.sol": "Counters"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LottoFlat.sol": {
+			"keccak256": "0x428cc95d0d52b6b37d4b5c1661e45b36c1eb232d4629b608c94efea7a74af136",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c1cabaadd926b8330c559d5a9597282e4636e7d418579082482ca8f392c8acbd",
+				"dweb:/ipfs/QmcXhj974EawM7aMhEFgDe4978k21ZoWUwi97S2SQxLRPr"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,444 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"addNftAddress(address)": "5da3c240",
+			"addTeam()": "0284a8d0",
+			"changeTeam(address,uint256)": "e5020a62",
+			"claimFee(uint256)": "f667526a",
+			"createProfile(uint256,address,uint256)": "fd825f58",
+			"getTeamProfile(uint256)": "aee2f47f",
+			"getUserProfile(address)": "987ee156",
+			"getUserStatus(address)": "ea0d5dcd",
+			"increaseTeamPoints(uint256,uint256,uint256)": "1e47a476",
+			"increaseUserPoints(address,uint256,uint256)": "1bdc17f6",
+			"increaseUserPointsMultiple(address[],uint256,uint256)": "e2fa2ff3",
+			"makeTeamJoinable(uint256)": "ebc4ffc7",
+			"makeTeamNotJoinable(uint256)": "218188d7",
+			"pauseProfile()": "c1694a2f",
+			"reactivateProfile(address,uint256)": "a40601ee",
+			"removeTeamPoints(uint256,uint256)": "d1d0954c",
+			"removeUserPoints(address,uint256)": "da83fe4a",
+			"removeUserPointsMultiple(address[],uint256)": "a56bd1de",
+			"renameTeam()": "a31567d3",
+			"updateNumberUns()": "de8eae6f",
+			"updateProfile()": "5c7c842a"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_nftAddress",
+					"type": "address"
+				}
+			],
+			"name": "addNftAddress",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "addTeam",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_userAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_newTeamId",
+					"type": "uint256"
+				}
+			],
+			"name": "changeTeam",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_amount",
+					"type": "uint256"
+				}
+			],
+			"name": "claimFee",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_teamId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_nftAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tokenId",
+					"type": "uint256"
+				}
+			],
+			"name": "createProfile",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_teamId",
+					"type": "uint256"
+				}
+			],
+			"name": "getTeamProfile",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_userAddress",
+					"type": "address"
+				}
+			],
+			"name": "getUserProfile",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_userAddress",
+					"type": "address"
+				}
+			],
+			"name": "getUserStatus",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_teamId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numberPoints",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_campaignId",
+					"type": "uint256"
+				}
+			],
+			"name": "increaseTeamPoints",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_userAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numberPoints",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_campaignId",
+					"type": "uint256"
+				}
+			],
+			"name": "increaseUserPoints",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address[]",
+					"name": "_userAddresses",
+					"type": "address[]"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numberPoints",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_campaignId",
+					"type": "uint256"
+				}
+			],
+			"name": "increaseUserPointsMultiple",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_teamId",
+					"type": "uint256"
+				}
+			],
+			"name": "makeTeamJoinable",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_teamId",
+					"type": "uint256"
+				}
+			],
+			"name": "makeTeamNotJoinable",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "pauseProfile",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_nftAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tokenId",
+					"type": "uint256"
+				}
+			],
+			"name": "reactivateProfile",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_teamId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numberPoints",
+					"type": "uint256"
+				}
+			],
+			"name": "removeTeamPoints",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_userAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numberPoints",
+					"type": "uint256"
+				}
+			],
+			"name": "removeUserPoints",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address[]",
+					"name": "_userAddresses",
+					"type": "address[]"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_numberPoints",
+					"type": "uint256"
+				}
+			],
+			"name": "removeUserPointsMultiple",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "renameTeam",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "updateNumberUns",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "updateProfile",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

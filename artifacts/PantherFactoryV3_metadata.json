@@ -1,0 +1,372 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract PantherFactoryV2",
+						"name": "_pantherFactoryV2",
+						"type": "address"
+					},
+					{
+						"internalType": "contract PantherMintingStation",
+						"name": "_pantherMintingStation",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IBEP20",
+						"name": "_unsToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_startBlockNumber",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "pantherId",
+						"type": "uint8"
+					}
+				],
+				"name": "PantherMint",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					}
+				],
+				"name": "canMint",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "claimFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasClaimed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_pantherId",
+						"type": "uint8"
+					}
+				],
+				"name": "mintNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pantherFactoryV2",
+				"outputs": [
+					{
+						"internalType": "contract PantherFactoryV2",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pantherMintingStation",
+				"outputs": [
+					{
+						"internalType": "contract PantherMintingStation",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_pantherId5Json",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pantherId6Json",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pantherId7Json",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pantherId8Json",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pantherId9Json",
+						"type": "string"
+					}
+				],
+				"name": "setPantherJson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newStartBlockNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "setStartBlockNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startBlockNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unsToken",
+				"outputs": [
+					{
+						"internalType": "contract IBEP20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newTokenPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "updateTokenPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"claimFee(uint256)": {
+					"details": "It transfers the UNS tokens back to the chef address. Only callable by the owner."
+				},
+				"mintNFT(uint8)": {
+					"details": "Mint NFTs from the PantherMintingStation contract. Users can specify what pantherId they want to mint. Users can claim once."
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"setPantherJson(string,string,string,string,string)": {
+					"details": "Set up json extensions for panthers 5-9 Assign tokenURI to look for each pantherId in the mint function Only the owner can set it."
+				},
+				"setStartBlockNumber(uint256)": {
+					"details": "Allow to set up the start number Only the owner can set it."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				},
+				"updateTokenPrice(uint256)": {
+					"details": "Allow to change the token price Only the owner can set it."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PantherFactoryV3.sol": "PantherFactoryV3"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"PantherFactoryV3.sol": {
+			"keccak256": "0xc6cc97dd88c3eb741770b27c0ae6ea8e3b601fec6c4ef22a6b6d1d3e1cd74f39",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e2661f2833eb768f6d399e3915376457005bd274e3a648515e800b5f32e5b5e2",
+				"dweb:/ipfs/Qmc3Ws2Uv9iujJNtKcQE22SgigAYXXUK4e9LTLhTBBFB8s"
+			]
+		}
+	},
+	"version": 1
+}

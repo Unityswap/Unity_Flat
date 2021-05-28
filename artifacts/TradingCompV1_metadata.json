@@ -1,0 +1,621 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_unityProfileAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_pantherStationAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_unsTokenAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "enum TradingCompV1.CompetitionStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "NewCompetitionStatus",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "TeamRewardsUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "UserRegister",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address[]",
+						"name": "userAddresses",
+						"type": "address[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rewardGroup",
+						"type": "uint256"
+					}
+				],
+				"name": "UserUpdateMultiple",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "WinningTeam",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "claimInformation",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "claimRemainder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentStatus",
+				"outputs": [
+					{
+						"internalType": "enum TradingCompV1.CompetitionStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numberTeams",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pantherId",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pantherMintingStation",
+				"outputs": [
+					{
+						"internalType": "contract PantherMintingStation",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unityProfile",
+				"outputs": [
+					{
+						"internalType": "contract IUnityProfile",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unsToken",
+				"outputs": [
+					{
+						"internalType": "contract IBEP20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum TradingCompV1.CompetitionStatus",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "updateCompetitionStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[5]",
+						"name": "_userCampaignIds",
+						"type": "uint256[5]"
+					},
+					{
+						"internalType": "uint256[5]",
+						"name": "_unsRewards",
+						"type": "uint256[5]"
+					},
+					{
+						"internalType": "uint256[5]",
+						"name": "_pointRewards",
+						"type": "uint256[5]"
+					}
+				],
+				"name": "updateTeamRewards",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_addressesToUpdate",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rewardGroup",
+						"type": "uint256"
+					}
+				],
+				"name": "updateUserStatusMultiple",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_winningTeamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_tokenURI",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_pantherId",
+						"type": "uint8"
+					}
+				],
+				"name": "updateWinningTeamAndTokenURIAndPantherId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userTradingStats",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "rewardGroup",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "teamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasRegistered",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasClaimed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewRewardTeams",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256[5]",
+								"name": "userCampaignId",
+								"type": "uint256[5]"
+							},
+							{
+								"internalType": "uint256[5]",
+								"name": "unsRewards",
+								"type": "uint256[5]"
+							},
+							{
+								"internalType": "uint256[5]",
+								"name": "pointUsers",
+								"type": "uint256[5]"
+							}
+						],
+						"internalType": "struct TradingCompV1.CompetitionRewards[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winningTeamId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"claimInformation(address)": {
+					"details": "It does not check if user has a profile since registration required a profile.",
+					"params": {
+						"_userAddress": ": the user address"
+					},
+					"returns": {
+						"_0": "hasRegistered: has the user registered",
+						"_1": "hasUserClaimed: whether user has claimed",
+						"_2": "userRewardGroup: the final reward group for each user (i.e. tier)",
+						"_3": "userUnsRewards: the UNS to claim/claimed",
+						"_4": "userPointReward: the number of points to claim/claimed",
+						"_5": "canClaimNFT: whether the user gets/got a NFT"
+					}
+				},
+				"claimRemainder(uint256)": {
+					"details": "Only callable by owner.",
+					"params": {
+						"_amount": ": amount of UNS to withdraw (decimals = 18)"
+					}
+				},
+				"claimReward()": {
+					"details": "It is only available during claiming phase"
+				},
+				"constructor": {
+					"params": {
+						"_pantherStationAddress": ": PantherMintingStation address",
+						"_unityProfileAddress": ": UnityProfile address",
+						"_unsTokenAddress": ": the address of the UNS token"
+					}
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"register()": {
+					"details": "Only callable if the user has an active UnityProfile."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				},
+				"updateCompetitionStatus(uint8)": {
+					"details": "Only callable by owner.",
+					"params": {
+						"_status": ": CompetitionStatus (uint8)"
+					}
+				},
+				"updateTeamRewards(uint256,uint256[5],uint256[5],uint256[5])": {
+					"details": "Only callable by owner.",
+					"params": {
+						"_pointRewards": ": point to collect for each user group for teamId",
+						"_teamId": ": the teamId",
+						"_unsRewards": ": UNS rewards for each user group for teamId",
+						"_userCampaignIds": ": campaignIds for each user group for teamId"
+					}
+				},
+				"updateUserStatusMultiple(address[],uint256)": {
+					"details": "Only callable by owner. Use with caution!",
+					"params": {
+						"_addressesToUpdate": ": the array of addresses",
+						"_rewardGroup": ": the reward group"
+					}
+				},
+				"updateWinningTeamAndTokenURIAndPantherId(uint256,string,uint8)": {
+					"details": "Only callable by owner.",
+					"params": {
+						"_pantherId": ": the pantherId for winners (e.g. 15)",
+						"_tokenURI": ": the tokenURI",
+						"_winningTeamId": ": the winning teamId"
+					}
+				}
+			},
+			"title": "TradingCompV1.",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"claimInformation(address)": {
+					"notice": "It checks the claim information"
+				},
+				"claimRemainder(uint256)": {
+					"notice": "It allows the owner to claim the UNS remainder"
+				},
+				"claimReward()": {
+					"notice": "It allows users to claim reward after the end of trading competition."
+				},
+				"constructor": "It initializes the contract.",
+				"register()": {
+					"notice": "It allows users to register for trading competition"
+				},
+				"updateCompetitionStatus(uint8)": {
+					"notice": "It allows the owner to change the competition status"
+				},
+				"updateTeamRewards(uint256,uint256[5],uint256[5],uint256[5])": {
+					"notice": "It allows the owner to update team rewards"
+				},
+				"updateUserStatusMultiple(address[],uint256)": {
+					"notice": "It allows the owner to update user statuses"
+				},
+				"updateWinningTeamAndTokenURIAndPantherId(uint256,string,uint8)": {
+					"notice": "It allows the owner to set the winning teamId (to collect NFT)"
+				},
+				"viewRewardTeams()": {
+					"notice": "It checks the reward groups for each team"
+				}
+			},
+			"notice": "It is a contract for users to collect points based on off-chain events",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TradingCompV1.sol": "TradingCompV1"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TradingCompV1.sol": {
+			"keccak256": "0xb3f297ed1eec5e358ca6a5caf9e4eb1b0660ac3ddd5be0027755bbe016bd37ec",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30f233ea6429163ea529a135f7ac6ac5605559991df43f203c7d9409df57b69a",
+				"dweb:/ipfs/QmPSjUNNwDtzP98TvvHqcMdnLdNrg5WftHXxtSVjd2ouFq"
+			]
+		}
+	},
+	"version": 1
+}

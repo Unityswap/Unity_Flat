@@ -1,0 +1,449 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract PantherMintingStation",
+						"name": "_pantherMintingStation",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IBEP20",
+						"name": "_unsToken",
+						"type": "address"
+					},
+					{
+						"internalType": "contract UnityProfile",
+						"name": "_unityProfile",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_thresholdUser",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_endBlock",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "endBlock",
+						"type": "uint256"
+					}
+				],
+				"name": "NewEndBlock",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "thresholdUser",
+						"type": "uint256"
+					}
+				],
+				"name": "NewThresholdUser",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "pantherId",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "PantherAdd",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "pantherId",
+						"type": "uint8"
+					}
+				],
+				"name": "PantherMint",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_pantherId",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_tokenURI",
+						"type": "string"
+					}
+				],
+				"name": "addPanther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "canClaim",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_endBlock",
+						"type": "uint256"
+					}
+				],
+				"name": "changeEndBlock",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_thresholdUser",
+						"type": "uint256"
+					}
+				],
+				"name": "changeThresholdUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "endBlock",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasClaimed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mintNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pantherMintingStation",
+				"outputs": [
+					{
+						"internalType": "contract PantherMintingStation",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "pantherTokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "previousNumberPantherIds",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "teamIdToPantherId",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "thresholdUser",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unityProfile",
+				"outputs": [
+					{
+						"internalType": "contract UnityProfile",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unsToken",
+				"outputs": [
+					{
+						"internalType": "contract IBEP20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addPanther(uint8,uint256,string)": {
+					"details": "Only callable by owner."
+				},
+				"changeEndBlock(uint256)": {
+					"details": "Only callable by owner."
+				},
+				"changeThresholdUser(uint256)": {
+					"details": "Only callable by owner."
+				},
+				"mintNFT()": {
+					"details": "Users can claim once. It maps to the teamId."
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"title": "PantherSpecialV2.",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"addPanther(uint8,uint256,string)": {
+					"notice": "Add/modify pantherId for a teamId and metadata"
+				},
+				"canClaim(address)": {
+					"notice": "Check if a user can claim."
+				},
+				"changeEndBlock(uint256)": {
+					"notice": "Change end block for distribution"
+				},
+				"changeThresholdUser(uint256)": {
+					"notice": "Change user threshold"
+				},
+				"mintNFT()": {
+					"notice": "Mint a NFT from the PantherMintingStation contract."
+				}
+			},
+			"notice": "It is a contract for users to mint exclusive Easter collectibles for their teams.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PantherSpecialV2.sol": "PantherSpecialV2"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"PantherSpecialV2.sol": {
+			"keccak256": "0xcc5de26d13e332f9d607df659e68bb5fc40e4cb664d80de566911223ec28a6b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7af65a87b97347b07f0f95bdb8ae9c123083ab0c207d3a596ff93bb4a115aa81",
+				"dweb:/ipfs/QmZmBY9X49E5667QUBtqL3YpG74oubWVzuP9wPbg3ZU6MP"
+			]
+		}
+	},
+	"version": 1
+}

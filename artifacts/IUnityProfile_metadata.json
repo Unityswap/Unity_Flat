@@ -1,0 +1,479 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddress",
+						"type": "address"
+					}
+				],
+				"name": "addNftAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "addTeam",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newTeamId",
+						"type": "uint256"
+					}
+				],
+				"name": "changeTeam",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "claimFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_nftAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "createProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "getTeamProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUserProfile",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUserStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberPoints",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_campaignId",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseTeamPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberPoints",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_campaignId",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseUserPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_userAddresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberPoints",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_campaignId",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseUserPointsMultiple",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "makeTeamJoinable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					}
+				],
+				"name": "makeTeamNotJoinable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pauseProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "reactivateProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teamId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberPoints",
+						"type": "uint256"
+					}
+				],
+				"name": "removeTeamPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberPoints",
+						"type": "uint256"
+					}
+				],
+				"name": "removeUserPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_userAddresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberPoints",
+						"type": "uint256"
+					}
+				],
+				"name": "removeUserPointsMultiple",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renameTeam",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "updateNumberUns",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "updateProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addNftAddress(address)": {
+					"details": "To add a NFT contract address for users to set their profile. Callable only by owner admins."
+				},
+				"addTeam()": {
+					"details": "Add a new teamId Callable only by owner admins."
+				},
+				"changeTeam(address,uint256)": {
+					"details": "Function to change team. Callable only by special admins."
+				},
+				"claimFee(uint256)": {
+					"details": "Claim UNS to burn later. Callable only by owner admins."
+				},
+				"getTeamProfile(uint256)": {
+					"details": "Check a team's profile"
+				},
+				"getUserProfile(address)": {
+					"details": "Check the user's profile for a given address"
+				},
+				"getUserStatus(address)": {
+					"details": "Check the user's status for a given address"
+				},
+				"increaseTeamPoints(uint256,uint256,uint256)": {
+					"details": "To increase the number of points for a team. Callable only by point admins"
+				},
+				"increaseUserPoints(address,uint256,uint256)": {
+					"details": "To increase the number of points for a user. Callable only by point admins"
+				},
+				"increaseUserPointsMultiple(address[],uint256,uint256)": {
+					"details": "To increase the number of points for a set of users. Callable only by point admins"
+				},
+				"makeTeamJoinable(uint256)": {
+					"details": "Make a team joinable again. Callable only by owner admins."
+				},
+				"makeTeamNotJoinable(uint256)": {
+					"details": "Make a team not joinable. Callable only by owner admins."
+				},
+				"pauseProfile()": {
+					"details": "To pause user profile. It releases the NFT. Callable only by registered users."
+				},
+				"reactivateProfile(address,uint256)": {
+					"details": "To reactivate user profile. Callable only by registered users."
+				},
+				"removeTeamPoints(uint256,uint256)": {
+					"details": "To remove the number of points for a team. Callable only by point admins"
+				},
+				"removeUserPoints(address,uint256)": {
+					"details": "To remove the number of points for a user. Callable only by point admins"
+				},
+				"removeUserPointsMultiple(address[],uint256)": {
+					"details": "To remove a set number of points for a set of users."
+				},
+				"renameTeam()": {
+					"details": "Rename a team Callable only by owner admins."
+				},
+				"updateNumberUns()": {
+					"details": "Update the number of UNS to register Callable only by owner admins."
+				},
+				"updateProfile()": {
+					"details": "To update user profile. Callable only by registered users."
+				}
+			},
+			"title": "IUnityProfile.",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PointCenterIFO.sol": "IUnityProfile"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"PointCenterIFO.sol": {
+			"keccak256": "0xf71f2bd43425cedef6440e143dc146c254551cd6238c552a632df59f0054fb3c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e69124d42361322cf720109a9e29e4b4e010885602eac875cb2763b605a9cf15",
+				"dweb:/ipfs/QmXpd2cSBqFqqQbEnz7KYoryrNPHoc9AznkGaiCqrcQhVf"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"artifacts/RYIPlatinum.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"artifacts/RYIPlatinum.sol": {
+			"keccak256": "0x03f6f60d3d47a883893852457857e958463aa8e82184d5d84ed380684a6a5d9d",
+			"urls": [
+				"bzz-raw://72256b5936cdfb4ef1df68e3fea184aece69df509c7117cd6204ae4f506b28d6",
+				"dweb:/ipfs/QmY7oWiox4tjDE9a6SxUXLDKUuoYXMVDFMELBKijrLFsud"
+			]
+		}
+	},
+	"version": 1
+}

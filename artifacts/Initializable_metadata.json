@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer function so it can only be called once. The {initializer} modifier provided by this contract will have this effect. TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as possible by providing the encoded function call as the `_data` argument to {UpgradeableProxy-constructor}. CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.",
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"_initialized": {
+					"details": "Indicates that the contract has been initialized."
+				},
+				"_initializing": {
+					"details": "Indicates that the contract is in the process of being initialized."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LottoFlat.sol": "Initializable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LottoFlat.sol": {
+			"keccak256": "0x428cc95d0d52b6b37d4b5c1661e45b36c1eb232d4629b608c94efea7a74af136",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c1cabaadd926b8330c559d5a9597282e4636e7d418579082482ca8f392c8acbd",
+				"dweb:/ipfs/QmcXhj974EawM7aMhEFgDe4978k21ZoWUwi97S2SQxLRPr"
+			]
+		}
+	},
+	"version": 1
+}

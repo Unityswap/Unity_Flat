@@ -1,0 +1,40 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UnityRouter.sol": "UnityLibrary"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UnityRouter.sol": {
+			"keccak256": "0x2ba0780e3f67e2b12b99b6bd535e897f4686cc0605a8da864abf7f26ee7f4ae7",
+			"urls": [
+				"bzz-raw://df3d10b893d80fea13545903cd2ce9d69c4fb0ad2a7f8f0e1d2eaff78c2b77c6",
+				"dweb:/ipfs/QmQ5q3vy9HYpj2ZwFU8tUQngjQ1w3NduzVe78qWkpHUC4E"
+			]
+		}
+	},
+	"version": 1
+}

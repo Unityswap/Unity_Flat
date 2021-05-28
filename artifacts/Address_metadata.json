@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UnityMaker.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UnityMaker.sol": {
+			"keccak256": "0xcdd712736c3010062bef4b83db3177b2522dc42e7d4746a5be87f77352eed97b",
+			"urls": [
+				"bzz-raw://4e71732ab5960b021dc6d0b3001459fdb5ab42c17f4108e6d5acc16bb52a579b",
+				"dweb:/ipfs/Qma7bFarESrWtST23U22Y5TnzejaZ9sMbVE8UnytH1hR2Y"
+			]
+		}
+	},
+	"version": 1
+}

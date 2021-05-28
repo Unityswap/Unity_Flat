@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "unityCall",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UnityFactory.sol": "IUnityCallee"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UnityFactory.sol": {
+			"keccak256": "0x5b7a84e851b2e2e099742f1b2e99d0199b192b5e8c6455a993d1cc6b820b1e7e",
+			"urls": [
+				"bzz-raw://ac05211899e555dcdc9ed59875445e23898ee46dc31a9948b57a1432d7b1efe9",
+				"dweb:/ipfs/QmWk3sQbaHj29AvVD6gZpJDxYjBbbnpM4V1PEoSf4TbXym"
+			]
+		}
+	},
+	"version": 1
+}
